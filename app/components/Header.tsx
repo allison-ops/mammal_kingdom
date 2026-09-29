@@ -7,7 +7,7 @@ import { useUsername } from "../lib/username";
 const links = [
   ["/#animals", "動物朋友"],
   ["/#traits", "哺乳類小知識"],
-  ["/blog", "動物部落格"],
+  ["/blog", "動物小故事"],
   ["#about", "關於我們"],
 ];
 

@@ -14,7 +14,7 @@ export default function BlogPage() {
       <section className="relative overflow-hidden bg-gradient-to-b from-indigo-950 via-purple-800 to-emerald-500 px-4 pt-12 pb-20 text-center sm:pt-16 sm:pb-24">
         <p className="text-base tracking-widest text-amber-200 sm:text-lg">✦ 床邊故事時間 ✦</p>
         <h1 className="mt-3 text-3xl font-bold text-white drop-shadow-[0_4px_0_rgba(88,28,135,0.8)] sm:text-5xl">
-          📖 動物部落格
+          📖 動物小故事
         </h1>
         <p className="mx-auto mt-4 max-w-xl text-base text-pink-50 sm:text-lg">
           每一位動物朋友都寫了一篇自我介紹，快來挑一篇喜歡的故事讀讀看吧！

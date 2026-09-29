@@ -42,7 +42,7 @@ export default async function ArticlePage(props: PageProps<"/blog/[slug]">) {
 
         <div className="p-6 sm:p-10">
           <Link href="/blog" className="text-sm font-semibold text-purple-600 hover:underline">
-            ← 回到動物部落格
+            ← 回到動物小故事
           </Link>
           <p className="mt-4 text-sm font-semibold tracking-wide text-purple-500">
             {mammal.emoji} {mammal.name}．{mammal.english}

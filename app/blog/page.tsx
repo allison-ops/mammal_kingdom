@@ -4,7 +4,7 @@ import Link from "next/link";
 import { mammals } from "../data/mammals";
 
 export const metadata: Metadata = {
-  title: "動物部落格",
+  title: "動物小故事",
   description: "八篇哺乳類動物的童話風介紹文章",
 };
 

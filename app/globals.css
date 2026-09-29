@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --background: #1b1446;
+  --foreground: #fdf6e3;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-fredoka), "Microsoft JhengHei", "PingFang TC", sans-serif;
+  --font-mono: var(--font-geist-mono);
+
+  --animate-twinkle: twinkle 3s ease-in-out infinite;
+  --animate-float: float 4s ease-in-out infinite;
+  --animate-draw: draw 1.2s ease-out forwards;
+  --animate-pop: pop 0.5s ease-out both;
+  --animate-shake: shake 0.5s ease-in-out;
+
+  @keyframes draw {
+    from { stroke-dashoffset: 1; }
+    to { stroke-dashoffset: 0; }
+  }
+
+  @keyframes pop {
+    0% { opacity: 0; transform: scale(0.5); }
+    70% { opacity: 1; transform: scale(1.1); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-8px); }
+    40%, 80% { transform: translateX(8px); }
+  }
+
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.2; transform: scale(0.8); }
+    50% { opacity: 1; transform: scale(1.2); }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
